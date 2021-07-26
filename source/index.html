@@ -6,48 +6,41 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="../source/img/logo-mobile.svg" width="33.32" height="37.61"
+      <img class="page-header__logo-image" src="../source/img/logo.svg" width="33.32" height="37.61"
         alt="Логотип с котом">
-    </a>
-    <a class="page-header__logo-brand">
       <img class="page-header__logo-brand-image" src="../source/img/logo-brand.svg" width="101" height="18"
         alt="Cat Energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__item-link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="#">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__item-link" href="#">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="#">Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="#">Подбор программы</a>
-        </li>
-      </ul>
-    </div>
   </header>
 
   <main class="page-main">
     <section class="promo">
-      <div class="promo__wrapper">
-        <header class="promo__header">
-          <h2 class="visually-hidden">Программа функционального питания</h2>
-          <h1 class="promo__slogan">Функциональное питание для котов"</h1>
-          <p class="promo__intro">Занялся собой? Займись котом!</p>
-          <a class="promo__product" href="#">
-            <img class="promo__product-image" src="../source/img/product-image-mobile.svg" width="280" height="270"
-              alt="Емкость с продуктом">
-          </a>
-          <a class="promo__program" href="#">Подобрать программу</a>
-        </header>
-      </div>
+      <h1 class="promo__slogan">Функциональное питание для котов"</h1>
+      <p class="promo__intro">Занялся собой? Займись котом!</p>
+      <a class="promo__product" href="#">
+        <img class="promo__product-image" src="../source/img/product-image.svg" width="280" height="270"
+          alt="Емкость с продуктом">
+      </a>
+      <a class="promo__program" href="#">Подобрать программу</a>
     </section>
 
     <section class="advantages">
@@ -57,17 +50,15 @@
         <h3 class="advantages__title">Похудение</h3>
         <p class="advantages__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="advantages__link" href="#">Каталог Slim</a>
-        <a class="advantages__link" href="#">
+        <a class="advantages__link" href="#">Каталог Slim
           <img class="advantages__link-image" src="../source/img/arrow-right.svg" width="24" height="12"
             alt="Стрелка на ссылку">
         </a>
-        <br>
         <img class="advantages__image" src="../source/img/cat-mass.svg" width="67" height="50" alt="Мускулистый кот">
         <h3 class="advantages__title">Набор массы</h3>
-        <p class="advantages__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="advantages__link" href="#">Каталог Pro</a>
-        <a class="advantages__link" href="#">
+        <p class="advantages__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+          поможет вашему коту нарастить необходимые мышцы!</p>
+        <a class="advantages__link" href="#">Каталог Pro
           <img class="advantages__link-image" src="../source/img/arrow-right.svg" width="24" height="12"
             alt="Стрелка на ссылку">
         </a>
@@ -76,7 +67,6 @@
 
     <section class="recipe">
       <div class="recipe__wrapper">
-        <h2 class="visually-hidden">Как это работает</h2>
         <h3 class="recipe__title">Как это работает</h3>
         <ul class="recipe__list">
           <li class="recipe__item">
@@ -100,7 +90,7 @@
     </section>
 
     <section class="result">
-      <div class="result_wrapper">
+      <div class="result__wrapper">
         <h2 class="visually-hidden">Результат</h2>
         <h3 class="result__title">Живой пример</h3>
         <p class="result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
@@ -114,7 +104,7 @@
           <p class="result__block-item">60 дней</p>
           <p class="result__block-item-description">затрачено времени</p>
         </div>
-        <p class="result__price">Затраты на питание: 15 000 руб</p>
+        <p class="result__price">Затраты на питание: 15 000 руб.</p>
         <div class="result__slider">
           <div class="result__slider-before">
             <img class="result__slider-image" src="../source/img/slider-before.png" width="311" height="232"
@@ -155,19 +145,19 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">
-              <img class="social__link--vkontakte-image" src="../source/img/vk.svg" width="23" height="16"
+              <img class="social__link social__link--vkontakte-image" src="../source/img/vk.svg" width="23" height="16"
                 alt="Иконка Вконтакте">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#">
-              <img class="social__link--instagram-image" src="../source/img/instagram.svg" width="16" height="16"
-                alt="Иконка Инстаграм">
+              <img class="social__link social__link--instagram-image" src="../source/img/instagram.svg" width="16"
+                height="16" alt="Иконка Инстаграм">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">
-              <img class="social__link--facebook-image" src="../source/img/fb.svg" width="22" height="22"
+              <img class="social__link social__link--facebook-image" src="../source/img/fb.svg" width="22" height="22"
                 alt="Иконка Фейсбук">
             </a>
           </li>
