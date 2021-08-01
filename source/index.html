@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -33,34 +34,41 @@
 
   <main class="page-main">
     <section class="promo">
-      <h1 class="promo__slogan">Функциональное питание для котов"</h1>
+      <h1 class="promo__slogan">Функциональное питание для котов</h1>
       <p class="promo__intro">Занялся собой? Займись котом!</p>
       <a class="promo__product" href="#">
         <img class="promo__product-image" src="../source/img/product-image.svg" width="280" height="270"
           alt="Емкость с продуктом">
       </a>
-      <a class="promo__program" href="form.html">Подобрать программу</a>
+      <div class="promo__program-button">
+        <a class="promo__program" href="form.html">Подобрать программу</a>
+      </div>
     </section>
 
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <img class="advantages__image" src="../source/img/cat-thick.svg" width="50" height="53" alt="Стройный кот">
-        <h3 class="advantages__title">Похудение</h3>
-        <p class="advantages__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-          Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="advantages__link" href="#">Каталог Slim
-          <img class="advantages__link-image" src="../source/img/arrow-right.svg" width="24" height="12"
-            alt="Стрелка на ссылку">
-        </a>
-        <img class="advantages__image" src="../source/img/cat-mass.svg" width="67" height="50" alt="Мускулистый кот">
-        <h3 class="advantages__title">Набор массы</h3>
-        <p class="advantages__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-          поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="advantages__link" href="#">Каталог Pro
-          <img class="advantages__link-image" src="../source/img/arrow-right.svg" width="24" height="12"
-            alt="Стрелка на ссылку">
-        </a>
+        <div class="advantages__block">
+          <img class="advantages__image" src="../source/img/cat-thick.svg" width="50" height="53" alt="Стройный кот">
+          <h3 class="advantages__title">Похудение</h3>
+          <p class="advantages__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+            Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="advantages__link" href="#">Каталог Slim
+            <img class="advantages__link-image" src="../source/img/arrow-right.svg" width="24" height="12"
+              alt="Стрелка на ссылку">
+          </a>
+        </div>
+        <div class="advantages__block">
+          <img class="advantages__image" src="../source/img/cat-mass.svg" width="67" height="50" alt="Мускулистый кот">
+          <h3 class="advantages__title">Набор массы</h3>
+          <p class="advantages__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+            Pro
+            поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="advantages__link" href="#">Каталог Pro
+            <img class="advantages__link-image" src="../source/img/arrow-right.svg" width="24" height="12"
+              alt="Стрелка на ссылку">
+          </a>
+        </div>
       </div>
     </section>
 
@@ -142,8 +150,8 @@
       </li>
       <li class="social-item">
         <a class="social-link" href="#">
-          <img class="social-link-instagram-image" src="../source/img/instagram.svg" width="16"
-            height="16" alt="Иконка Инстаграм">
+          <img class="social-link-instagram-image" src="../source/img/instagram.svg" width="16" height="16"
+            alt="Иконка Инстаграм">
         </a>
       </li>
       <li class="social-item">
