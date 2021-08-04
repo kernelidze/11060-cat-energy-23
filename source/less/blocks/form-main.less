@@ -21,13 +21,15 @@
   text-transform: uppercase;
 }
 
+.form__info label,
+.form__info input::placeholder,
 .form__program label,
 .form__program input::placeholder,
-.program-list__item,
+.form__program-list-item,
 .form__contacts,
 .form__contacts input::placeholder,
 .form__commentary textarea::placeholder,
-.additional-list__item {
+.form__additional-list-item {
   font-family: "OswaldRegular", "Arial";
   font-style: normal;
   font-size: 16px;
@@ -35,6 +37,10 @@
   font-weight: 400;
   color: @special-dark-grey;
   text-transform: uppercase;
+}
+
+.form__program {
+  border: none;
 }
 
 .form__program-list,
