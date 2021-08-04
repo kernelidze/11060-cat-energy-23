@@ -1,5 +1,7 @@
 .result {
   background-color: @basic-grey-result;
+  min-width: 280px;
+  min-height: 705px;
 }
 
 .result__title {
@@ -8,6 +10,9 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  margin: 0;
+  padding-top: 27px;
+  margin-bottom: 33px;
 }
 
 .result__description {
@@ -16,10 +21,16 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  margin: 0;
+}
+
+.result__block-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .result__block-item {
-  font-family: "OswaldMedium", "Arial";
+  font-family: "OswaldRegular", "Arial";
   font-style: normal;
   font-size: 24px;
   line-height: 24px;
@@ -36,17 +47,24 @@
 }
 
 .result__price {
-  font-family: "OswaldMedium", "Arial";
+  font-family: "OswaldRegular", "Arial";
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.result__slider-toggle-container {
+  display: flex;
+  justify-content: center;
 }
 
 
 .result__slider-text {
-  font-family: "OswaldMedium", "Arial";
+  font-family: "OswaldRegular", "Arial";
   font-style: normal;
   font-size: 16px;
   line-height: 20px;

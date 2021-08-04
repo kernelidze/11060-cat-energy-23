@@ -1,17 +1,26 @@
-.advantages__wrapper {
-  width: 280px;
+.advantages {
+  text-align: center;
 }
 
 .advantages__block {
   background-color: @basic-grey;
-  margin-bottom: 20px;
+  margin: 20px 0;
   display: grid;
-  grid-template-columns: min-content auto;
+  grid-template-columns: auto 1fr;
   grid-template-rows: auto auto auto;
+  min-width: 280px;
+  min-height: 266px;
+}
+
+.advantages__image {
+  margin-top: 21px;
+  margin-left: 22px;
+  margin-bottom: 22px;
+
 }
 
 .advantages__title {
-  font-family: "OswaldMedium", "Arial";
+  font-family: "OswaldRegular", "Arial";
   font-style: normal;
   font-size: 24px;
   line-height: 37px;
@@ -26,11 +35,16 @@
   line-height: 18px;
   font-weight: 400;
   grid-column: ~"1/3";
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 33px;
+  margin-top: 0;
+  margin-bottom: 38px;
 }
 
 .advantages__link {
   text-decoration: none;
-  font-family: "OswaldMedium", "Arial";
+  font-family: "OswaldRegular", "Arial";
   font-style: normal;
   font-size: 16px;
   line-height: 16px;
@@ -38,4 +52,8 @@
   text-transform: uppercase;
   color: @basic-black;
   grid-column: ~"1/3";
+  text-align: left;
+  margin-left: 19px;
+  margin-top: 0;
+  margin-bottom: 18px;
 }
