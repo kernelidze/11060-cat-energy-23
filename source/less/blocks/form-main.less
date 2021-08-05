@@ -3,7 +3,7 @@
 }
 
 .form__head-title {
-  font-family: "OswaldRegular", "Arial";
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
@@ -12,7 +12,7 @@
 }
 
 .form__text {
-  font-family: "OswaldRegular", "Arial";
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
@@ -30,13 +30,18 @@
 .form__contacts input::placeholder,
 .form__commentary textarea::placeholder,
 .form__additional-list-item {
-  font-family: "OswaldRegular", "Arial";
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: @special-dark-grey;
   text-transform: uppercase;
+}
+
+.form input,
+.form textarea {
+  line-height: 18px;
 }
 
 .form__program {
@@ -50,8 +55,16 @@
   padding: 0;
 }
 
+.form__program-list-item label {
+  color: @special-dark-grey-2;
+}
+
+.form__program-list-item {
+  color: @basic-black;
+}
+
 .form__title {
-  font-family: "OswaldRegular", "Arial";
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 24px;
   line-height: 26px;
@@ -60,7 +73,7 @@
 }
 
 .form__button {
-  font-family: "OswaldRegular", "Arial";
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -79,7 +92,7 @@
 }
 
 .form__legend {
-  font-family:"Arial";
+  font-family:"Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 16px;

@@ -4,33 +4,46 @@
   background-color: @basic-grey;
 }
 
+.page-footer__contacts-title-main,
 .page-footer__contacts-title {
-  font-family: "OswaldRegular", "Arial";
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
-  line-height: 20px;
   font-weight: 400;
+  color: @basic-light-black;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
 }
 
+.page-footer__contacts-title-main {
+  line-height: 20px;
+}
+
+.page-footer__contacts-title {
+  line-height: 18px;
+}
+
 .page-footer__contacts-text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  background-color: @basic-white;
+  color: @special-dark-grey;
   margin: 0;
   padding: 0;
 }
 
+.page-footer__contacts-container-main,
 .page-footer__contacts-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 26px;
   margin-top: 28px;
+}
+
+.page-footer__contacts-container-main {
   background-color: @basic-white;
 }
 
@@ -69,7 +82,7 @@
 .page-footer__copyright-link {
   text-decoration: none;
   color: @special-dark-grey;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
