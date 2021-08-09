@@ -1,7 +1,21 @@
 
 .page-footer {
-  width: 280px;
   background-color: @basic-grey;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 640px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 960px;
+    margin: 0 auto;
+  }
 }
 
 .page-footer__contacts-title-main,
@@ -88,4 +102,3 @@
   line-height: 18px;
   font-weight: 400;
 }
-
