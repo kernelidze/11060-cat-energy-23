@@ -52,6 +52,10 @@
   display: flex;
   justify-content: space-between;
   min-height: 114px;
+  @media (min-width: @tablet-width) {
+    width: 625px;
+    min-height: 201px;
+  }
   @media (min-width: @desktop-width) {
     width: 570px;
     min-height: 201px;
@@ -68,6 +72,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   @media (min-width: @desktop-width) {
     display: flex;
@@ -79,8 +84,6 @@
   display: flex;
   justify-content: center;
   background-color: @basic-grey;
-  margin-top: 39px;
-  margin-bottom: 52px;
 }
 
 .page-footer__social-list {
@@ -92,8 +95,6 @@
   background-color: @basic-grey;
   width: 130px;
   height: 22px;
-  margin-left: 73px;
-  margin-bottom: 43px;
 }
 
 .page-footer__social-item {
@@ -104,7 +105,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 22px;
 }
 
 .page-footer__copyright-link {
