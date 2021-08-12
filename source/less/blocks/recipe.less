@@ -14,6 +14,19 @@
   margin-bottom: 42px;
 }
 
+@media (min-width: @tablet-width) {
+  .recipe__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recipe__list {
+    display: flex;
+  }
+}
+
 .recipe__item {
   display: flex;
   margin: 20px 0;

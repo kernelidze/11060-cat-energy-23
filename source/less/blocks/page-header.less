@@ -1,7 +1,22 @@
 .page-header {
+  display: flex;
+  justify-content: space-between;
   width: 280px;
 }
 
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
 
 .page-header__logo {
   text-decoration: none;
