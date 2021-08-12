@@ -51,8 +51,10 @@
 .page-footer__contacts-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-height: 114px;
   @media (min-width: @tablet-width) {
+    margin: auto;
     width: 625px;
     min-height: 201px;
   }
@@ -64,7 +66,6 @@
 
 .page-footer__contacts-container-main {
   background-color: @basic-white;
-  align-items: center;
 }
 
 .page-footer__links-container {
@@ -73,10 +74,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
