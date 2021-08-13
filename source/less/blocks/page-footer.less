@@ -47,7 +47,6 @@
   padding: 0;
 }
 
-.page-footer__contacts-container-main,
 .page-footer__contacts-container {
   display: flex;
   justify-content: space-between;
@@ -61,11 +60,16 @@
   @media (min-width: @desktop-width) {
     width: 570px;
     min-height: 201px;
+    margin: 0;
   }
 }
 
-.page-footer__contacts-container-main {
-  background-color: @basic-white;
+.page-footer__lower-line {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    background-color: @basic-grey;
+  }
 }
 
 .page-footer__links-container {

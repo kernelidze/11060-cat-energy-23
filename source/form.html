@@ -63,10 +63,14 @@
       </fieldset>
       <section class="form__contacts">
         <h2 class="form__title">Контактные данные (владельца кота)</h2>
-        <label for="form__form-mail">E-mail:*</label>
-        <input id="form__form-mail" type="email" name="email" placeholder="kuklachev@gmail.com">
-        <label for="form__form-phone">Телефон:*</label>
-        <input id="form__form-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+        <div>
+          <label for="form__form-mail">E-mail:*</label>
+          <input id="form__form-mail" type="email" name="email" placeholder="kuklachev@gmail.com">
+        </div>
+        <div>
+          <label for="form__form-phone">Телефон:*</label>
+          <input id="form__form-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+        </div>
       </section>
       <section class="form__commentary">
         <h2 class="form__title">Комментарий</h2>
@@ -94,8 +98,10 @@
           </li>
         </ul>
       </section>
-      <button class="form__button" type="submit">Отправить заявку</button>
-      <p class="form__legend">* — Обязательные поля</p>
+      <div class="form__agree">
+        <button class="form__button" type="submit">Отправить заявку</button>
+        <p class="form__legend">* — Обязательные поля</p>
+      </div>
     </form>
   </main>
 
@@ -108,36 +114,38 @@
     <img class="page-footer__contacts-map-image" src="../source/img/map.jpg" width="320" height="362"
       alt="Месторасположение">
     <h2 class="visually-hidden">Наши ссылки</h2>
-    <a class="page-footer__logo-brand" href="index.html">
-      <img class="page-footer__logo-brand-image" src="../source/img/logo-brand.svg" width="128" height="24"
-        alt="Cat Energy">
-    </a>
-    <ul class="page-footer__social-list">
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link" href="#">
-          <img class="page-footer__social-link-vkontakte-image" src="../source/img/vk.svg" width="23" height="16"
-            alt="Иконка Вконтакте">
+    <div class="page-footer__lower-line">
+      <a class="page-footer__logo-brand" href="index.html">
+        <img class="page-footer__logo-brand-image" src="../source/img/logo-brand.svg" width="128" height="24"
+          alt="Cat Energy">
+      </a>
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="#">
+            <img class="page-footer__social-link-vkontakte-image" src="../source/img/vk.svg" width="23" height="16"
+              alt="Иконка Вконтакте">
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="#">
+            <img class="page-footer__social-link-instagram-image" src="../source/img/instagram.svg" width="16"
+              height="16" alt="Иконка Инстаграм">
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="#">
+            <img class="page-footer__social-link-facebook-image" src="../source/img/fb.svg" width="22" height="22"
+              alt="Иконка Фейсбук">
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright-container">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="page-footer__footer-logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-footer__footer-logo-image" src="../source/img/academy.svg" width="27" height="34"
+            alt="Логотип Академии">
         </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link" href="#">
-          <img class="page-footer__social-link-instagram-image" src="../source/img/instagram.svg" width="16" height="16"
-            alt="Иконка Инстаграм">
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link" href="#">
-          <img class="page-footer__social-link-facebook-image" src="../source/img/fb.svg" width="22" height="22"
-            alt="Иконка Фейсбук">
-        </a>
-      </li>
-    </ul>
-    <div class="page-footer__copyright-container">
-    <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    <a class="page-footer__footer-logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-      <img class="page-footer__footer-logo-image" src="../source/img/academy.svg" width="27" height="34"
-        alt="Логотип Академии">
-    </a>
+      </div>
     </div>
   </footer>
 </body>

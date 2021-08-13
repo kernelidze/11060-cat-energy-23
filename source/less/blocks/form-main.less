@@ -1,5 +1,11 @@
 .form-main {
   width: 280px;
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .form__head-title {
@@ -9,6 +15,17 @@
   line-height: 36px;
   font-weight: 400;
   color: @basic-black;
+}
+
+.form__info {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 569px;
+  }
 }
 
 .form__text {
@@ -64,6 +81,17 @@
   color: @basic-black;
 }
 
+.form__contacts {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 569px;
+  }
+}
+
 .form__title {
   font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
@@ -71,6 +99,26 @@
   line-height: 26px;
   font-weight: 400;
   color: @basic-black;
+}
+
+.form__additional-list {
+  @media (min-width: @tablet-width) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+.form__agree {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+  @media (min-width: @desktop-width) {
+    width: 569px;
+  }
 }
 
 .form__button {
@@ -90,6 +138,12 @@
   align-items: center;
   border: none;
   cursor: pointer;
+  @media (min-width: @tablet-width) {
+    width: 282px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }
 
 .form__legend {
