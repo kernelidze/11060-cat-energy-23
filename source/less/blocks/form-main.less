@@ -1,12 +1,21 @@
 .form-main {
   width: 280px;
   @media (min-width: @tablet-width) {
-    width: 708px;
+    width: 631px;
   }
   @media (min-width: @desktop-width) {
     width: 1220px;
   }
 }
+
+.form__desktop-block {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+  }
+}
+
 
 .form__head-title {
   font-family: "OswaldRegular", "Arial", sans-serif;
@@ -17,12 +26,37 @@
   color: @basic-black;
 }
 
-.form__info {
+.form__info,
+.form__contacts {
   display: flex;
   flex-direction: column;
-  @media (min-width: @tablet-width) {
-    width: 630px;
+}
+
+.form__info {
+  @media (min-width: @desktop-width) {
+    width: 569px;
   }
+}
+
+.form__commentary {
+  width: 100%;
+}
+
+.form__commentary textarea {
+  min-height: 150px;
+  box-sizing: border-box;
+  @media (min-width: @tablet-width) {
+    min-height: 174px;
+  }
+}
+
+.form__info-block,
+.form__contacts-block {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.form__info-block {
   @media (min-width: @desktop-width) {
     width: 569px;
   }
@@ -36,6 +70,10 @@
   font-weight: 400;
   color: @basic-black;
   text-transform: uppercase;
+}
+
+.form__info input {
+  width: 100%;
 }
 
 .form__info label,
@@ -54,15 +92,24 @@
   font-weight: 400;
   color: @special-dark-grey;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
 
 .form input,
 .form textarea {
   line-height: 18px;
+  width: 100%;
 }
 
 .form__program {
   border: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .form__program-list,
@@ -88,7 +135,10 @@
     width: 630px;
   }
   @media (min-width: @desktop-width) {
-    width: 569px;
+    width: 1220px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
   }
 }
 
@@ -99,25 +149,28 @@
   line-height: 26px;
   font-weight: 400;
   color: @basic-black;
+  grid-column: ~"1/-1";
 }
 
 .form__additional-list {
   @media (min-width: @tablet-width) {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
-    }
+  }
 }
 
 .form__agree {
   @media (min-width: @tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 61px;
   }
   @media (min-width: @desktop-width) {
-    width: 569px;
+    column-gap: 81px;
   }
 }
 
@@ -154,4 +207,7 @@
   font-weight: 400;
   color: @basic-black;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
 }

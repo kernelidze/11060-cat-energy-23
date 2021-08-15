@@ -35,15 +35,22 @@
 
   <main class="form-main">
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
+      <div class="form__desktop-block">
       <section class="form__info">
         <h1 class="form__head-title">Подбор программы</h1>
         <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <label for="form__form-name">Имя:*</label>
-        <input id="form__form-name" type="text" name="name" placeholder="Барсик">
-        <label for="form__form-weight">Вес (кг):*</label>
-        <input id="form__form-weight" type="number" name="weight" placeholder="7">
-        <label for="form__form-old">Возраст (лет):</label>
-        <input id="form__form-old" type="number" name="old" placeholder="7">
+        <div class="form__info-block">
+          <label for="form__form-name">Имя:*</label>
+          <input id="form__form-name" type="text" name="name" placeholder="Барсик">
+        </div>
+        <div class="form__info-block">
+          <label for="form__form-weight">Вес (кг):*</label>
+          <input id="form__form-weight" type="number" name="weight" placeholder="7">
+        </div>
+        <div class="form__info-block">
+          <label for="form__form-old">Возраст (лет):</label>
+          <input id="form__form-old" type="number" name="old" placeholder="7">
+        </div>
       </section>
       <fieldset class="form__program">
         <ul class="form__program-list">
@@ -61,13 +68,14 @@
           </li>
         </ul>
       </fieldset>
+      </div>
       <section class="form__contacts">
         <h2 class="form__title">Контактные данные (владельца кота)</h2>
-        <div>
+        <div class="form__contacts-block">
           <label for="form__form-mail">E-mail:*</label>
           <input id="form__form-mail" type="email" name="email" placeholder="kuklachev@gmail.com">
         </div>
-        <div>
+        <div class="form__contacts-block">
           <label for="form__form-phone">Телефон:*</label>
           <input id="form__form-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
         </div>
