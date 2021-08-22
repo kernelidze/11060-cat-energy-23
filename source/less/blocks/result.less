@@ -52,7 +52,7 @@
     line-height: 24px;
     margin-bottom: 54px;
   }
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     width: 436px;
     height: 96px;
     margin-bottom: 70px;
@@ -74,7 +74,6 @@
     display: grid;
     grid-template-columns: auto auto;
     width: 366px;
-    /* height: 152px; */
     height: auto;
     justify-items: left;
     margin: 0;
@@ -195,19 +194,31 @@
   }
 }
 
+.result__slider-before,
+.result__slider-after {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .result__slider-image {
   display: flex;
   justify-self: center;
   margin: auto;
+}
+
+.result__slider-beforeafter {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: -100px;
+    top: -175px;
+    right: 185px;
     width: 508px;
     height: 420px;
   }
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: -500px;
+    top: -530px;
+    right: 150px;
     width: 508px;
     height: 420px;
   }
