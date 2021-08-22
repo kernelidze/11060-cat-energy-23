@@ -1,18 +1,15 @@
 .page-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 280px;
-}
-
-@media (min-width: @tablet-width) {
-  .page-header {
+  position: relative;
+  @media (min-width: @tablet-width) {
     width: 708px;
     margin: 0 auto;
+    flex-direction: row;
   }
-}
-
-@media (min-width: @desktop-width) {
-  .page-header {
+  @media (min-width: @desktop-width) {
     width: 1220px;
     margin: 0 auto;
   }
@@ -20,4 +17,42 @@
 
 .page-header__logo {
   text-decoration: none;
+  width: 191px;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+    margin-top: 24px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+    margin-top: 56px;
+  }
+}
+
+.page-header__logo-brand-image {
+  width: 118px;
+  height: 21px;
+}
+
+.page-header__nav-toggle {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 24px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-color: #6a4d38;
+  cursor: pointer;
+  border: none;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
