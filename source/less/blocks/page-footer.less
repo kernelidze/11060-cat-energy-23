@@ -1,16 +1,16 @@
 .page-footer {
-  width: 280px;
-  @media (min-width: @tablet-width) {
-    width: 708px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    @media (min-width: @tablet-width) {
+    display: block;
     margin: 0 auto;
   }
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
     position: relative;
   }
 }
-
 
 .page-footer__contacts-container {
   display: flex;
@@ -22,6 +22,7 @@
     margin: auto;
     width: 625px;
     min-height: 201px;
+    align-self: center;
   }
   @media (min-width: @desktop-width) {
     width: 570px;
@@ -98,16 +99,23 @@
   width: 100%;
   @media (min-width: @tablet-width) {
     height: 400px;
-
   }
 }
 
-.page-footer__lower-line {
+.page-footer__lower-line-wrapper-mini {
+  width: 100%;
   background-color: @basic-grey;
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__lower-line {
+  width: 280px;
   min-height: 236px;
   display: flex;
   flex-direction: column;
   @media (min-width: @tablet-width) {
+    width: 708px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -115,17 +123,18 @@
     min-height: 150px;
     align-items: center;
   }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .page-footer__logo-brand {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: @basic-grey;
   height: 93px;
   border-bottom: 1px solid @special-grey-2;
   box-sizing: border-box;
-  margin-top: -4px;
   @media (min-width: @tablet-width) {
     border: none;
   }
@@ -147,7 +156,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: @basic-grey;
   width: 130px;
   height: 63px;
   @media (min-width: @tablet-width) {

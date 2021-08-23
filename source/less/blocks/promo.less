@@ -1,12 +1,15 @@
 .promo {
   position: relative;
   text-align: center;
-  min-width: 280px;
+  /* min-width: 280px; */
+  width: 100%;
   color: @basic-white;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   @media (min-width: @tablet-width) {
+    display: block;
     width: 708px;
     margin: 0 auto;
     text-align: left;
@@ -75,6 +78,7 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  width: 320px;
   @media (min-width: @tablet-width) {
     width: 414px;
     font-size: 60px;
@@ -112,22 +116,18 @@
 
 .promo__product-image {
   margin-bottom: 6px;
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     align-self: center;
-    width: 708px;
-    height: 609px;
     position: absolute;
     top: 265px;
-    left: 40px;
+    left: 1px;
     z-index: -1;
     margin: 0;
   }
   @media (min-width: @desktop-width) {
-    width: 552px;
-    height: 499px;
     position: absolute;
     top: 25px;
-    left: 468px;
+    left: 448px;
     z-index: -1;
     margin: 0;
   }
