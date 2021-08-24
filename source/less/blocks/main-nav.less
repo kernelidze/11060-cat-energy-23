@@ -2,35 +2,71 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .main-nav__list {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    background-color: @basic-white;
+    z-index: 4;
+    width: 280px;
+    display: none;
+  }
+  @media (min-width: @tablet-width) {
     width: 440px;
+    min-height: 36px;
     display: flex;
     justify-content: space-between;
+    margin-top: 42px;
   }
-  .main-nav__toggle {
-    display: none;
+  @media (min-width: @desktop-width) {
+    width: 478px;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 69px;
+    z-index: 4;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .main-nav__list {
-    width: 478px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .main-nav__toggle {
+/* .main-nav__toggle {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-color: #6a4d38;
+  cursor: pointer;
+  border: none;
+  @media (min-width: @tablet-width) {
     display: none;
   }
-}
+} */
 
 .main-nav__list-item {
-  margin: 23px 0 23px;
-  text-align: center;
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid @special-grey;
+    height: 66px;
+    &:first-child {
+      border-top: 1px solid @special-grey;
+    }
+  }
 }
+
+.main-nav__list-item--active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @basic-green;
+  }
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @basic-white;
+  }
+}
+
 
 .main-nav__list-item-link {
   text-decoration: none;
@@ -41,4 +77,19 @@
   font-weight: 500;
   text-transform: uppercase;
   color: @basic-black;
+  @media (min-width: @tablet-width) {
+    font-family: "OswaldRegular", "Arial", sans-serif;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  @media (min-width: @desktop-width) {
+    font-family: "OswaldRegular", "Arial", sans-serif;
+    font-style: normal;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: @basic-white;
+  }
 }
