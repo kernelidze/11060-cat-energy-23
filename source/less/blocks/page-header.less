@@ -21,12 +21,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
 .page-header__logo-big {
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
   @media (max-width: @mobile-width-only) {
     display: none;
   }
@@ -54,9 +69,23 @@
   display: block;
   width: 24px;
   height: 16px;
-  background-color: #6a4d38;
   cursor: pointer;
   border: none;
+  background-color: @basic-white;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__nav-toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: @basic-black;
+  box-shadow: 0 8px 0 0 @basic-black, 0 16px 0 0 @basic-black;
   @media (min-width: @tablet-width) {
     display: none;
   }
