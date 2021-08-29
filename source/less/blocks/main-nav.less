@@ -1,3 +1,25 @@
+.main-nav__wrapper-mini {
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__header {
+  width: 100%;
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .main-nav__list {
   list-style-type: none;
   margin: 0;
@@ -6,7 +28,8 @@
     position: absolute;
     background-color: @basic-white;
     z-index: 4;
-    width: 280px;
+    /* width: 280px; */
+    width: 100%;
     display: none;
   }
   @media (min-width: @tablet-width) {
