@@ -6,21 +6,33 @@
 }
 
 .form {
-  @media (max-width: @mobile-width-only) {
-  width: 280px;
-  }
+  width: 100%;
+  overflow: hidden;
 }
 
 .form__desktop-block {
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid @special-grey-2;
+  }
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: auto;
+  }
   @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: auto;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 80px;
     align-items: end;
+    justify-content: start;
   }
 }
 
 .form__head-title {
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+  }
   font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 36px;
@@ -28,7 +40,6 @@
   font-weight: 400;
   color: @basic-black;
   box-sizing: border-box;
-  border-top: 1px solid @special-grey-3;
   margin: 0;
   padding-top: 27px;
   margin-bottom: 37px;
@@ -140,6 +151,12 @@
   }
 }
 
+.form__info-block:last-of-type input {
+  @media (max-width: @mobile-width-only) {
+    width: 175px;
+  }
+}
+
 .form__info-block label {
   margin-right: 11px;
   @media (min-width: @tablet-width) {
@@ -148,6 +165,11 @@
 }
 
 .form__info {
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    margin: auto;
+    margin-bottom: 27px;
+  }
   margin-bottom: 27px;
   @media (min-width: @tablet-width) {
     margin-bottom: 72px;
@@ -167,6 +189,7 @@
   padding-bottom: 25px;
   margin: 0;
   @media (min-width: @tablet-width) {
+    justify-content: left;
     width: 628px;
     height: 195px;
     border: 1px solid @special-grey-2;
@@ -185,6 +208,13 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.form__program-list {
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    margin: auto;
+  }
 }
 
 .form__program-list-item {
@@ -278,12 +308,22 @@
   }
 }
 
-/* .form__contacts {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+.form__contacts {
+  position: relative;
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    margin: auto;
+  }
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: auto;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: auto;
+  }
+}
+
 
 .form__contacts input {
   min-height: 45px;
@@ -330,10 +370,6 @@
   }
 }
 
-.form__contacts {
-  position: relative;
-}
-
 .form__contacts::after {
   content: "";
   position: absolute;
@@ -358,14 +394,29 @@
     width: 554px;
     margin-top: 76px;
     margin-bottom: 76px;
+    padding-left: 39px;
+    margin-left: -39px;
   }
   @media (min-width: @desktop-width) {
     margin-top: 68px;
   }
 }
 
+
 .form__commentary {
   position: relative;
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    margin: auto;
+  }
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: auto;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: auto;
+  }
 }
 
 .form__commentary-title::after {
@@ -392,6 +443,18 @@
 
 .form__additional {
   position: relative;
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    margin: auto;
+  }
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: auto;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: auto;
+  }
 }
 
 .form__additional::after {
@@ -462,10 +525,6 @@
   }
 }
 
-/* .form__commentary {
-  width: 1220px;
-  text-align: center;
-} */
 
 .form__commentary-title {
   margin-top: 23px;
@@ -477,14 +536,16 @@
   @media (min-width: @desktop-width) {
     margin-top: 47px;
     margin-bottom: 76px;
-    /* margin-right: 1040px; */
   }
 }
 
 .form__commentary textarea {
   min-height: 150px;
-  width: 100%;
+  /* width: 100%; */
+  width: 280px;
+  resize: none;
   @media (min-width: @tablet-width) {
+    width: 631px;
     min-height: 174px;
   }
   @media (min-width: @desktop-width) {
@@ -576,13 +637,21 @@
 }
 
 .form__agree {
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    margin: auto;
+  }
   @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: auto;
     display: grid;
     grid-template-columns: min-content auto;
     column-gap: 64px;
     margin-bottom: 57px;
   }
   @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: auto;
     column-gap: 80px;
     margin-bottom: 67px;
   }
