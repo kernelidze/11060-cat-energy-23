@@ -35,6 +35,10 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   z-index: -2;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-cat@2x.jpg");
+    background-size: 320px 302px;
+  }
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     display: none;
   }
@@ -44,6 +48,10 @@
     width: 720px;
     height: 694px;
     background-image: url("../img/index-background-cat-desktop.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-cat-desktop@2x.jpg");
+      background-size: 720px 694px;
+    }
   }
 }
 
