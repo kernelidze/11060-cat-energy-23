@@ -186,11 +186,24 @@
 .page-footer__social-link-vkontakte-image {
   width: 23px;
   height: 16px;
+  &:hover {
+    path {
+      fill: @basic-green;
+    }
+  }
   @media (min-width: @tablet-width) {
     width: 30px;
     height: 22px;
   }
 }
+
+/* .page-footer__social-link-vkontakte-image {
+  &:hover {
+    path {
+      fill: @basic-green;
+    }
+  }
+} */
 
 .page-footer__social-link-instagram-image {
   width: 16px;
