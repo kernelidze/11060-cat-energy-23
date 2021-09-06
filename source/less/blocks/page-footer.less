@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     display: block;
     margin: 0 auto;
   }
@@ -186,8 +186,13 @@
 .page-footer__social-link-vkontakte-image {
   width: 23px;
   height: 16px;
+  fill: @special-grey-social;
   &:hover {
     fill: @basic-green;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
   }
   @media (min-width: @tablet-width) {
     width: 30px;
@@ -198,6 +203,14 @@
 .page-footer__social-link-instagram-image {
   width: 16px;
   height: 16px;
+  fill: @special-grey-social;
+  &:hover {
+    fill: @basic-green;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
   @media (min-width: @tablet-width) {
     width: 23px;
     height: 23px;
@@ -207,8 +220,13 @@
 .page-footer__social-link-facebook-image {
   width: 22px;
   height: 22px;
+  stroke: @special-grey-social;
   &:hover {
-    fill: @basic-green;
+    stroke: @basic-green;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
   }
   @media (min-width: @tablet-width) {
     width: 28px;
@@ -237,4 +255,18 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__footer-logo-image {
+  fill: @special-grey-social;
+  &:hover {
+    fill: @basic-green;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
 }
