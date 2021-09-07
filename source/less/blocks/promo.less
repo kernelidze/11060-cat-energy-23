@@ -7,6 +7,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
   @media (min-width: @tablet-width) {
     display: block;
     width: 708px;
@@ -14,6 +15,7 @@
     text-align: left;
     color: @basic-black;
   }
+
   @media (min-width: @desktop-width) {
     width: 1220px;
     margin: 0 auto;
@@ -35,19 +37,23 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   z-index: -2;
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/index-background-cat@2x.jpg");
     background-size: 320px 302px;
   }
+
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     display: none;
   }
+
   @media (min-width: @desktop-width) {
     top: -120px;
     left: 610px;
     width: 720px;
     height: 694px;
     background-image: url("../img/index-background-cat-desktop.jpg");
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-background-cat-desktop@2x.jpg");
       background-size: 720px 694px;
@@ -67,15 +73,16 @@
   background-color: @basic-green;
   background-position: 50% 0;
   z-index: -2;
+
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     display: none;
   }
+
   @media (min-width: @desktop-width) {
     top: -120px;
     left: 610px;
     width: 100%;
     height: 694px;
-
   }
 }
 
@@ -86,6 +93,7 @@
   line-height: 36px;
   font-weight: 400;
   width: 320px;
+
   @media (min-width: @tablet-width) {
     width: 414px;
     font-size: 60px;
@@ -94,6 +102,7 @@
     margin-bottom: 41px;
     margin-left: 87px;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 108px;
     margin-bottom: 40px;
@@ -109,12 +118,14 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 49px;
     margin-left: 87px;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 52px;
     margin-left: 80px;
@@ -123,6 +134,7 @@
 
 .promo__product-image {
   margin-bottom: 6px;
+
   @media (min-width: @tablet-width) {
     align-self: center;
     position: absolute;
@@ -131,6 +143,7 @@
     z-index: -1;
     margin: 0;
   }
+
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 25px;
@@ -155,6 +168,7 @@
   height: 40px;
   justify-content: center;
   align-items: center;
+
   @media (min-width: @tablet-width) {
     width: 244px;
     height: 54px;
@@ -163,6 +177,7 @@
     margin-left: 90px;
     margin-bottom: 526px;
   }
+
   @media (min-width: @desktop-width) {
     margin: 0;
     margin-left: 80px;
