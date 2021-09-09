@@ -5,13 +5,35 @@
   width: 100%;
   position: relative;
   align-items: center;
+
   @media (min-width: @tablet-width) {
     width: 708px;
     margin: 0 auto;
     flex-direction: row;
   }
+
   @media (min-width: @desktop-width) {
     width: 1220px;
+  }
+}
+
+.page-header__wrapper-mini {
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 708px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 1220px;
+    justify-content: space-between;
   }
 }
 
@@ -22,12 +44,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   &:hover {
     opacity: 0.8;
   }
+
   &:active {
     opacity: 0.6;
   }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -37,33 +62,31 @@
   &:hover {
     opacity: 0.8;
   }
+
   &:active {
     opacity: 0.6;
   }
+
   @media (max-width: @mobile-width-only) {
     display: none;
   }
+
   @media (min-width: @tablet-width) {
     display: block;
     margin-top: 25px;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 56px;
   }
 }
 
-.page-header__logo-brand-image {
-  width: 118px;
-  height: 21px;
-}
-
 .page-header__nav-toggle {
-  /* position: absolute; */
   position: relative;
   padding: 0;
   margin: 0;
   top: 24px;
-  right: 0;
+  left: 34px;
   z-index: 2;
   display: block;
   width: 24px;
@@ -71,12 +94,31 @@
   cursor: pointer;
   border: none;
   background-color: @basic-white;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-.page-header__nav-toggle::before {
+.page-header__nav-toggle--closed + .main-nav .main-nav__list {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+    top: 66px;
+  }
+}
+
+.page-header__nav-toggle--opened + .main-nav .main-nav__list {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+    top: 66px;
+  }
+}
+
+.page-header__nav-toggle--nojs.page-header__nav-toggle {
+  display: none;
+}
+
+.page-header__nav-toggle--closed::before {
   content: "";
   position: absolute;
   top: 0;
@@ -85,7 +127,34 @@
   height: 2px;
   background-color: @basic-black;
   box-shadow: 0 8px 0 0 @basic-black, 0 16px 0 0 @basic-black;
+
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.page-header__nav-toggle--opened {
+  width: 24px;
+  height: 24px;
+  margin-top: -5px;
+
+  &::before,
+  &::after {
+    top: 12px;
+    right: 0;
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: @basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
