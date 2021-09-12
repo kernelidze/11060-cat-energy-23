@@ -130,12 +130,53 @@
 }
 
 .recipe__item-image {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: @basic-green;
+  flex-shrink: 0;
+
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
     margin-top: 40px;
     margin-bottom: 31px;
   }
+}
+
+.recipe__item-image::after {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, 0);
+
+  @media (min-width: @tablet-width) {
+    top: 25px;
+  }
+}
+
+.recipe__item:nth-child(1) .recipe__item-image::after {
+  content: url("../img/icon-leaf.svg");
+  width: 30px;
+  height: 32px;
+}
+
+.recipe__item:nth-child(2) .recipe__item-image::after {
+  content: url("../img/icon-tub.svg");
+  width: 29px;
+  height: 31px;
+}
+
+.recipe__item:nth-child(3) .recipe__item-image::after {
+  content: url("../img/icon-eat.svg");
+  width: 25px;
+  height: 30px;
+}
+
+.recipe__item:nth-child(4) .recipe__item-image::after {
+  content: url("../img/icon-alarm.svg");
+  width: 32px;
+  height: 33px;
 }
 
 .recipe__description {

@@ -1,12 +1,17 @@
 .promo {
   position: relative;
-  text-align: center;
+  width: 100%;
+}
+
+.promo__wrapper {
+  position: relative;
   width: 100%;
   color: @basic-white;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     display: block;
@@ -17,10 +22,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
     text-align: left;
+    width: 1220px;
     color: @basic-black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -30,16 +38,15 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  z-index: 1;
+  height: 302px;
   opacity: 0.85;
-  background-image: url("../img/index-background-cat.jpg");
+  background: @special-background-cat url("../img/index-background-cat.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   z-index: -2;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/index-background-cat@2x.jpg");
+    background: @special-background-cat url("../img/index-background-cat@2x.jpg");
     background-size: 320px 302px;
   }
 
@@ -49,13 +56,12 @@
 
   @media (min-width: @desktop-width) {
     top: -120px;
-    left: 610px;
-    width: 720px;
+    left: 50%;
     height: 694px;
-    background-image: url("../img/index-background-cat-desktop.jpg");
+    background: @special-background-cat no-repeat url("../img/index-background-cat-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-background-cat-desktop@2x.jpg");
+      background: @special-background-cat url("../img/index-background-cat-desktop@2x.jpg");
       background-size: 720px 694px;
     }
   }
@@ -68,7 +74,6 @@
   top: 0;
   width: 100%;
   height: 302px;
-  z-index: 1;
   opacity: 0.8;
   background-color: @basic-green;
   background-position: 50% 0;
@@ -80,7 +85,7 @@
 
   @media (min-width: @desktop-width) {
     top: -120px;
-    left: 610px;
+    left: 50%;
     width: 100%;
     height: 694px;
   }
@@ -138,7 +143,7 @@
   @media (min-width: @tablet-width) {
     align-self: center;
     position: absolute;
-    top: 265px;
+    top: 205px;
     left: 1px;
     z-index: -1;
     margin: 0;
@@ -168,6 +173,15 @@
   height: 40px;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    background-color: @basic-green-2;
+  }
+
+  &:active {
+    background-color: @basic-green-2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     width: 244px;

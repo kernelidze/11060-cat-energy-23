@@ -120,9 +120,15 @@
   height: 362px;
   border: none;
   width: 100%;
+  background: @special-background-map url("../img/map-mini.jpg");
 
   @media (min-width: @tablet-width) {
     height: 400px;
+    background: @special-background-map url("../img/map-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background: @special-background-map url("../img/map-desktop.jpg");
   }
 }
 
@@ -131,6 +137,7 @@
   background-color: @basic-grey;
   display: flex;
   justify-content: center;
+  margin-top: -10px;
 }
 
 .page-footer__lower-line {
@@ -199,6 +206,7 @@
     width: 129px;
     height: 33px;
     margin: 0;
+    margin-left: 28px;
   }
 }
 

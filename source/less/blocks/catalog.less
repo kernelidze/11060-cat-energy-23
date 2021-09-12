@@ -230,6 +230,15 @@
   grid-column: ~"1/-1";
   grid-row: ~"3/3";
   margin-bottom: 25px;
+
+  &:hover {
+    background-color: @basic-green-2;
+  }
+
+  &:active {
+    background-color: @basic-green-2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .catalog__item-buy {
@@ -341,6 +350,15 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
+
+  &:hover {
+    background-color: @special-grey-3;
+  }
+
+  &:active {
+    background-color: @special-grey-3;
+    color: rgba(0, 0, 0, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     width: 249px;
@@ -628,30 +646,30 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/catalog-background-cat-gift.jpg");
+  background: @special-background-catalog url("../img/catalog-background-cat-gift.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   z-index: -2;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/catalog-background-cat-gift@2x.jpg");
+    background: @special-background-catalog url("../img/catalog-background-cat-gift@2x.jpg");
     background-size: 280px 290px;
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/catalog-background-cat-gift-tablet.jpg");
+    background: @special-background-catalog url("../img/catalog-background-cat-gift-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/catalog-background-cat-gift-tablet@2x.jpg");
+      background: @special-background-catalog url("../img/catalog-background-cat-gift-tablet@2x.jpg");
       background-size: 707px 200px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/catalog-background-cat-gift-desktop.jpg");
+    background: @special-background-catalog url("../img/catalog-background-cat-gift-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/catalog-background-cat-gift-desktop@2x.jpg");
+      background: @special-background-catalog url("../img/catalog-background-cat-gift-desktop@2x.jpg");
       background-size: 245px 289px;
     }
   }
