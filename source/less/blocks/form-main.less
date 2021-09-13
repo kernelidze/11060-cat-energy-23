@@ -114,7 +114,19 @@
   line-height: 18px;
   font-size: 16px;
   box-sizing: border-box;
-  border: 1px solid @special-grey;
+  border: 1px solid @special-grey-4;
+
+  &:hover {
+    border: 1px solid @special-grey;
+  }
+
+  &:focus {
+    border: 1px solid @special-dark-grey;
+  }
+
+  &:invalid {
+    border: 1px solid @special-error;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -357,6 +369,11 @@
 
 .form__contacts-block-mail label {
   position: relative;
+  margin-right: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
 }
 
 .form__contacts-block-mail label::after {
@@ -378,6 +395,11 @@
 
 .form__contacts-block-phone label {
   position: relative;
+  margin-right: 8px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 14px;
+  }
 }
 
 .form__contacts-block-phone label::after {
@@ -464,11 +486,20 @@
   background: @basic-white;
   width: 143px;
   z-index: 2;
+  margin-top: 23px;
+  margin-bottom: 37px;
 
   @media (min-width: @tablet-width) {
     padding-left: 39px;
     margin-left: -39px;
     width: 220px;
+    margin-top: 65px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 47px;
+    margin-bottom: 76px;
   }
 }
 
@@ -502,11 +533,19 @@
 .form__additional-title {
   background: @basic-white;
   width: 164px;
+  margin-top: 23px;
+  margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
     width: 252px;
     padding-left: 39px;
     margin-left: -39px;
+    margin-top: 61px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 65px;
   }
 }
 
@@ -523,37 +562,6 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
-  }
-}
-
-.form__contacts-block-mail label {
-  margin-right: 11px;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 20px;
-  }
-}
-
-.form__contacts-block-phone label {
-  margin-right: 8px;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 14px;
-  }
-}
-
-.form__commentary-title {
-  margin-top: 23px;
-  margin-bottom: 37px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 65px;
-    margin-bottom: 76px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 47px;
-    margin-bottom: 76px;
   }
 }
 
@@ -576,20 +584,6 @@
 .form__commentary textarea::placeholder {
   padding-left: 15px;
   padding-top: 9px;
-}
-
-.form__additional-title {
-  margin-top: 23px;
-  margin-bottom: 34px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 61px;
-    margin-bottom: 62px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 65px;
-  }
 }
 
 .form__additional-list {
