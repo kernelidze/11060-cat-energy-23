@@ -21,9 +21,8 @@
       </a>
       <a class="page-header__logo-big" href="index.html">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" alt="Логотип с котом">
-          <img class="page-header__logo-image-big" src="img/logo-tablet.svg" width="174" height="52"
-            alt="Логотип с котом">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <img class="page-header__logo-image-big" src="img/logo-tablet.svg" alt="Логотип с котом">
         </picture>
       </a>
       <button class="page-header__nav-toggle page-header__nav-toggle--nojs" type="button"><span
@@ -54,15 +53,15 @@
           <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
           <div class="form__info-block">
             <label for="form__form-name">Имя:*</label>
-            <input id="form__form-name" type="text" name="name" placeholder="Барсик">
+            <input class="form__form-name-input" id="form__form-name" type="text" name="name" placeholder="Барсик">
           </div>
           <div class="form__info-block">
             <label for="form__form-weight">Вес (кг):*</label>
-            <input id="form__form-weight" type="number" name="weight" placeholder="7">
+            <input class="form__form-weight-input" id="form__form-weight" type="number" name="weight" placeholder="7">
           </div>
           <div class="form__info-block">
             <label for="form__form-old">Возраст (лет):</label>
-            <input id="form__form-old" type="number" name="old" placeholder="7">
+            <input class="form__form-old-input" id="form__form-old" type="number" name="old" placeholder="7">
           </div>
         </section>
 
@@ -149,10 +148,10 @@
     </form>
   </main>
 
-  <footer class="page-footer page-footer__all--color">
+  <footer class="page-footer page-footer--color">
     <h2 class="visually-hidden">Контакты</h2>
     <div class="page-footer__contacts-container page-footer__contacts-container--color">
-      <h3 class="page-footer__contacts-title-main">Приглашаем<br>к сотрудничеству<br>дилеров!</h3>
+      <h3 class="page-footer__contacts-title">Приглашаем<br>к сотрудничеству<br>дилеров!</h3>
       <p class="page-footer__contacts-text">ул. Большая<br>Конюшенная, д. 19/8<br><br
           class="page-footer__contacts-text-hidden">Санкт-Петербург</p>
     </div>

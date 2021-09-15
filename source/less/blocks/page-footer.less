@@ -16,13 +16,16 @@
 }
 
 .page-footer__contacts-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   width: 280px;
   min-height: 114px;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: auto;
     width: 625px;
     min-height: 201px;
@@ -40,7 +43,7 @@
   }
 }
 
-.page-footer__all--color {
+.page-footer--color {
   background-color: @basic-grey;
 }
 
@@ -70,19 +73,25 @@
   line-height: 20px;
 
   @media (min-width: @tablet-width) {
-    line-height: 21px;
+    line-height: 25px;
   }
 
   @media (min-width: @desktop-width) {
+    line-height: 25px;
     margin-left: 77px;
   }
 }
 
 .page-footer__contacts-title {
-  line-height: 18px;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 27px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-left: 77px;
+    line-height: 25px;
   }
 }
 
@@ -115,7 +124,6 @@
   }
 }
 
-
 .page-footer iframe {
   height: 362px;
   border: none;
@@ -137,7 +145,10 @@
   background-color: @basic-grey;
   display: flex;
   justify-content: center;
-  margin-top: -10px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .page-footer__lower-line {
@@ -158,6 +169,12 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
+  }
+}
+
+.page-footer__lower-line--height {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    margin-top: -9px;
   }
 }
 
@@ -182,6 +199,12 @@
   }
 }
 
+.page-footer__logo-brand-image {
+  @media (max-width: @mobile-width-only) {
+    margin-top: 8px;
+  }
+}
+
 .page-footer__links-container {
   background-color: @basic-grey;
 
@@ -199,7 +222,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 130px;
+  min-width: 130px;
   height: 63px;
 
   @media (min-width: @tablet-width) {
@@ -207,6 +230,12 @@
     height: 33px;
     margin: 0;
     margin-left: 28px;
+  }
+}
+
+.page-footer__social-item {
+  @media (max-width: @mobile-width-only) {
+    margin-top: 7px;
   }
 }
 
@@ -292,9 +321,14 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  margin-top: -7px;
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: -5px;
   }
 }
 

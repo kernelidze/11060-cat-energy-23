@@ -20,8 +20,13 @@
 .page-header__wrapper-mini {
   @media (max-width: @tablet-width) {
     width: 280px;
+    /* width: 100%; */
     display: flex;
+
+    /* flex-direction: column; */
+
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   @media (min-width: @tablet-width) {
@@ -44,6 +49,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* align-self: center; */
 
   &:hover {
     opacity: 0.8;
@@ -117,6 +124,17 @@
 .page-header__nav-toggle--nojs.page-header__nav-toggle {
   display: none;
 }
+
+.page-header__nav-toggle--nojs + .main-nav .main-nav__list {
+  @media (max-width: @tablet-width) {
+    position: static;
+    /* width: 100%; */
+    width: 280px;
+    top: 66px;
+
+  }
+}
+
 
 .page-header__nav-toggle--closed::before {
   content: "";

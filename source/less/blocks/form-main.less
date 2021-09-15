@@ -65,6 +65,7 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 70px;
+    margin-bottom: 57px;
   }
 }
 
@@ -87,12 +88,14 @@
 }
 
 .form__info label,
+.form__info input,
 .form__info input::placeholder,
 .form__program label,
 .form__program input::placeholder,
 .form__program-list-item,
 .form__contacts,
 .form__contacts input::placeholder,
+.form__commentary textarea,
 .form__commentary textarea::placeholder,
 .form__additional-list-item {
   font-family: "OswaldRegular", "Arial", sans-serif;
@@ -113,6 +116,7 @@
 .form textarea {
   line-height: 18px;
   font-size: 16px;
+  text-transform: none;
   box-sizing: border-box;
   border: 1px solid @special-grey-4;
 
@@ -142,6 +146,19 @@
   }
 }
 
+.form__info-block .form__form-name-input {
+  padding-left: 15px;
+  padding-top: 3px;
+}
+
+.form__info-block .form__form-weight-input,
+.form__info-block .form__form-old-input {
+  @media (max-width: @mobile-width-only) {
+    padding-left: 20px;
+    padding-top: 3px;
+  }
+}
+
 .form__info-block input {
   min-height: 45px;
 
@@ -157,7 +174,7 @@
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     width: 630px;
@@ -201,9 +218,8 @@
   @media (max-width: @mobile-width-only) {
     width: 280px;
     margin: auto;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
   }
-  margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 72px;
@@ -260,7 +276,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 23px;
-    margin-left: 60px;
+    margin-left: 58px;
   }
 }
 
@@ -282,13 +298,26 @@
   height: 30px;
   border: 1px solid @special-grey;
   border-radius: 100%;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
-    left: -62px;
-    top: -7px;
+    left: -60px;
+    top: -6px;
   }
+}
+
+.form__program-list-input:hover + label::before,
+.form__additional-list-input:hover + label::before {
+  border: 1px solid @special-grey-hover;
+}
+
+.form__program-list-input:disabled + label::before,
+.form__program-list-input:disabled + label::after,
+.form__additional-list-input:disabled + label::before,
+.form__additional-list-input:disabled + label::after {
+  opacity: 0.3;
 }
 
 .form__program-list-input:checked + label::after {
@@ -367,6 +396,13 @@
   }
 }
 
+.form__contacts-block-phone .form__form-phone-input {
+  @media (max-width: @mobile-width-only) {
+    padding-left: 17px;
+    padding-top: 3px;
+  }
+}
+
 .form__contacts-block-mail label {
   position: relative;
   margin-right: 11px;
@@ -379,13 +415,14 @@
 .form__contacts-block-mail label::after {
   position: absolute;
   content: url("../img/icon-mail.svg");
-  top: 0;
-  left: 250px;
+  top: 1px;
+  left: 245px;
   width: 20px;
   height: 14px;
 
   @media (min-width: @tablet-width) {
     left: 594px;
+    top: -3px;
   }
 
   @media (min-width: @desktop-width) {
@@ -406,7 +443,7 @@
   position: absolute;
   content: url("../img/icon-phone.svg");
   top: 0;
-  left: 250px;
+  left: 247px;
   width: 20px;
   height: 14px;
 
@@ -450,7 +487,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 68px;
+    margin-top: 71px;
+    margin-bottom: 74px;
   }
 }
 
@@ -486,7 +524,7 @@
   background: @basic-white;
   width: 143px;
   z-index: 2;
-  margin-top: 23px;
+  margin-top: 26px;
   margin-bottom: 37px;
 
   @media (min-width: @tablet-width) {
@@ -533,8 +571,8 @@
 .form__additional-title {
   background: @basic-white;
   width: 164px;
-  margin-top: 23px;
-  margin-bottom: 34px;
+  margin-top: 20px;
+  margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     width: 252px;
@@ -569,8 +607,11 @@
   min-height: 150px;
   width: 280px;
   resize: none;
+  padding-left: 13px;
+  padding-top: 9px;
 
   @media (min-width: @tablet-width) {
+    padding-left: 18px;
     width: 631px;
     min-height: 174px;
   }
@@ -579,11 +620,6 @@
     width: 1220px;
     min-height: 174px;
   }
-}
-
-.form__commentary textarea::placeholder {
-  padding-left: 15px;
-  padding-top: 9px;
 }
 
 .form__additional-list {
@@ -667,14 +703,14 @@
     margin: auto;
     display: grid;
     grid-template-columns: min-content auto;
-    column-gap: 64px;
-    margin-bottom: 57px;
+    column-gap: 62px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
     margin: auto;
-    column-gap: 80px;
+    column-gap: 83px;
     margin-bottom: 67px;
   }
 }
