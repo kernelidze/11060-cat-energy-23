@@ -124,6 +124,13 @@
   }
 }
 
+.page-footer__contacts-title-main--height,
+.page-footer__contacts-text--height {
+  @media (max-width: @mobile-width-only) {
+    margin-top: 5px;
+  }
+}
+
 .page-footer iframe {
   height: 362px;
   border: none;
@@ -224,12 +231,14 @@
   align-items: center;
   min-width: 130px;
   height: 63px;
+  column-gap: 30px;
 
   @media (min-width: @tablet-width) {
-    width: 129px;
+    min-width: 129px;
     height: 33px;
     margin: 0;
     margin-left: 28px;
+    column-gap: 20px;
   }
 }
 
@@ -344,3 +353,4 @@
     opacity: 0.6;
   }
 }
+

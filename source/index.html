@@ -51,12 +51,17 @@
         <h1 class="promo__slogan">Функциональное питание для котов</h1>
         <p class="promo__intro">Занялся собой? Займись котом!</p>
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/product-image-desktop.webp 1x, img/product-image-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/product-image-tablet.webp 1x, img/product-image-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/product-image-desktop.webp 1x, img/product-image-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/product-image-tablet.webp 1x, img/product-image-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/product-image.webp 1x,product-image@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/product-image-desktop.png 1x, img/product-image-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/product-image-tablet.png 1x, img/product-image-tablet@2x.png 2x">
-          <img class="promo__product-image" src="img/product-image.png" srcset="img/product-image@2x.png 2x" alt="Емкость с продуктом">
+          <source media="(min-width: 1440px)"
+            srcset="img/product-image-desktop.png 1x, img/product-image-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/product-image-tablet.png 1x, img/product-image-tablet@2x.png 2x">
+          <img class="promo__product-image" src="img/product-image.png" srcset="img/product-image@2x.png 2x"
+            alt="Емкость с продуктом">
         </picture>
         <a class="promo__program-link" href="form.html">Подобрать программу</a>
       </div>
@@ -71,6 +76,7 @@
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="advantages__link" href="#">Каталог Slim
           <img class="advantages__link-image" src="img/arrow-right.svg" width="24" height="12" alt="Стрелка на ссылку">
+          <img class="advantages__link-image-hover" src="img/arrow-right-hover.svg" alt="Стрелка на ссылку">
         </a>
       </div>
       <div class="advantages__block">
@@ -81,6 +87,7 @@
           поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="advantages__link" href="#">Каталог Pro
           <img class="advantages__link-image" src="img/arrow-right.svg" width="24" height="12" alt="Стрелка на ссылку">
+          <img class="advantages__link-image-hover" src="img/arrow-right-hover.svg" alt="Стрелка на ссылку">
         </a>
       </div>
     </section>
@@ -143,10 +150,14 @@
             </div>
             <div class="result__slider-toggle-container">
               <p class="result__slider-text">Было</p>
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/slider-desktop.svg">
+              <div class="result__slider-control">
+                <svg class="result__slider-control-image">
+                  <use xlink:href="img/sprite.svg#slider-control"></use>
+                </svg>
+              </div>
+              <div class="result__slider-control-mini">
                 <img src="img/slider-mini.svg" alt="Слайдер">
-              </picture>
+              </div>
               <p class="result__slider-text">Стало</p>
             </div>
           </div>
@@ -158,8 +169,9 @@
   <footer class="page-footer">
     <h2 class="visually-hidden">Контакты</h2>
     <div class="page-footer__contacts-container">
-      <h3 class="page-footer__contacts-title-main">Приглашаем<br>к сотрудничеству<br>дилеров!</h3>
-      <p class="page-footer__contacts-text">ул. Большая<br>Конюшенная, д. 19/8<br><br
+      <h3 class="page-footer__contacts-title-main page-footer__contacts-title-main--height">Приглашаем<br>к
+        сотрудничеству<br>дилеров!</h3>
+      <p class="page-footer__contacts-text page-footer__contacts-text--height">ул. Большая<br>Конюшенная, д. 19/8<br><br
           class="page-footer__contacts-text-hidden">Санкт-Петербург</p>
     </div>
     <iframe

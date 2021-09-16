@@ -243,7 +243,7 @@
     background-color: @basic-grey;
     position: absolute;
     top: 490px;
-    margin-left: 641px;
+    margin-left: 651px;
   }
 }
 
@@ -265,10 +265,11 @@
   justify-content: space-between;
   justify-self: center;
   align-items: center;
-  width: 200px;
+  width: 197px;
   height: 40px;
-  margin-top: 22px;
+  margin-top: 23px;
   margin-bottom: 25px;
+  margin-left: 5px;
 
   @media (min-width: @tablet-width) {
     width: 570px;
@@ -276,21 +277,10 @@
     margin-bottom: 64px;
     z-index: 2;
     position: relative;
-
-    &::before {
-      position: absolute;
-      content: url("../img/slider-control.svg");
-      top: 3px;
-      left: 47%;
-      width: 34px;
-      height: 34px;
-      cursor: pointer;
-    }
   }
 
-
   @media (min-width: @desktop-width) {
-    width: 579px;
+    width: 570px;
     margin: 0;
     height: auto;
   }
@@ -302,7 +292,7 @@
   @media (min-width: @tablet-width) {
     display: block;
     position: absolute;
-    top: -175px;
+    top: -190px;
     right: 0;
   }
 
@@ -318,6 +308,53 @@
   border: none;
 }
 
+.result__slider-control-mini {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.result__slider-control {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 8px;
+    margin-left: 6px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: 73px;
+    content: url("../img/slider-desktop.svg");
+    z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      top: 10px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 15px;
+    }
+  }
+}
+
+.result__slider-control-image {
+  width: 40px;
+  height: 40px;
+  stroke: @special-grey;
+
+  &:hover {
+    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.19));
+  }
+
+  &:active {
+    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.19));
+    stroke: @basic-green;
+  }
+}
+
 
 .result__slider-text {
   font-family: "OswaldRegular", "Arial", sans-serif;
@@ -327,15 +364,15 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  cursor: default;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted @special-grey;
-    cursor: pointer;
 
     &:hover {
-      border-bottom: 2px solid @special-grey;
+      border-bottom: 1px solid @special-grey;
     }
 
     &:active {

@@ -55,7 +55,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: -120px;
+    top: -117px;
     left: 50%;
     height: 694px;
     background: @special-background-cat no-repeat url("../img/index-background-cat-desktop.jpg");
@@ -84,7 +84,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: -120px;
+    top: -117px;
     left: 50%;
     width: 100%;
     height: 694px;
@@ -162,7 +162,7 @@
   font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
@@ -170,9 +170,12 @@
   background-color: @basic-green;
   display: flex;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin-top: -3px;
+  margin-bottom: 3px;
 
   &:hover {
     background-color: @basic-green-2;
@@ -185,9 +188,10 @@
 
   @media (min-width: @tablet-width) {
     width: 244px;
-    height: 54px;
+    min-height: 54px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 38px;
+    margin: 0;
     margin-left: 90px;
     margin-bottom: 526px;
   }

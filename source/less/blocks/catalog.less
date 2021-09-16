@@ -110,6 +110,7 @@
     justify-content: flex-end;
     position: relative;
     border: none;
+    padding-top: 140px;
   }
 
   @media (min-width: @desktop-width) {
@@ -241,7 +242,7 @@
   font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 38px;
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
@@ -249,12 +250,13 @@
   background-color: @basic-green;
   display: flex;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   justify-content: center;
   align-items: center;
   grid-column: ~"1/-1";
   grid-row: ~"3/3";
   margin-bottom: 25px;
+  text-align: center;
 
   &:hover {
     background-color: @basic-green-2;
@@ -311,6 +313,7 @@
     border: 2px solid @basic-grey;
     min-height: 429px;
     background-color: @basic-white;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -378,7 +381,7 @@
   background-color: @basic-grey;
   display: flex;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
